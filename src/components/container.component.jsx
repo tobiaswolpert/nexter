@@ -7,15 +7,74 @@ import house3 from "../img/house-3.jpeg";
 import house4 from "../img/house-4.jpeg";
 import house5 from "../img/house-5.jpeg";
 import house6 from "../img/house-6.jpeg";
+import gal1 from "../img/gal-1.jpeg";
+import gal2 from "../img/gal-2.jpeg";
+import gal3 from "../img/gal-3.jpeg";
+import gal4 from "../img/gal-4.jpeg";
+import gal5 from "../img/gal-5.jpeg";
+import gal6 from "../img/gal-6.jpeg";
+import gal7 from "../img/gal-7.jpeg";
+import gal8 from "../img/gal-8.jpeg";
+import gal9 from "../img/gal-9.jpeg";
+import gal10 from "../img/gal-10.jpeg";
+import gal11 from "../img/gal-11.jpeg";
+import gal12 from "../img/gal-12.jpeg";
+import gal13 from "../img/gal-13.jpeg";
+import gal14 from "../img/gal-14.jpeg";
+import logo from "../img/favicon.png";
+import logo1 from "../img/logo-bbc.png";
+import logo2 from "../img/logo-bi.png";
+import logo3 from "../img/logo-forbes.png";
+import logo4 from "../img/logo-techcrunch.png";
+import realtor1 from "../img/realtor-1.jpeg";
+import realtor2 from "../img/realtor-2.jpeg";
+import realtor3 from "../img/realtor-3.jpeg";
 
 const Container = () => {
   return (
     <div className="container">
-      <div className="sidebar">Sidebar</div>
+      <div className="sidebar">
+        <button className="nav-btn">
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+      </div>
 
-      <header className="header">Header</header>
+      <header className="header">
+        <img className="header__logo" src={logo} alt="logo" />
+        <h3 className="heading-3">Your own home</h3>
+        <h1 className="heading-1">The ultimate personal freedom</h1>
+        <button className="btn header__btn">View our properties</button>
+        <header className="header__seenon-text">As seen on</header>
+        <div className="header__seeonon-logos">
+          <img src={logo1} alt="logo" />
+          <img src={logo2} alt="logo" />
+          <img src={logo3} alt="logo" />
+          <img src={logo4} alt="logo" />
+        </div>
+      </header>
 
-      <div className="realtors">Top 3 realtors</div>
+      <div className="realtors">
+        <h3 className="heading-3">Top 3 realtors</h3>
+        <div className="realtors__list">
+          <img className="realtors__img" src={realtor1} alt="realtor" />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Erik Feinman</h4>
+            <p className="realtors__sold">245 houses sold</p>
+          </div>
+
+          <img className="realtors__img" src={realtor2} alt="realtor" />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Kim Brown</h4>
+            <p className="realtors__sold">212 houses sold</p>
+          </div>
+
+          <img className="realtors__img" src={realtor3} alt="realtor" />
+          <div className="realtors__details">
+            <h4 className="heading-4 heading-4--light">Toby Ramsey</h4>
+            <p className="realtors__sold">198 houses sold</p>
+          </div>
+        </div>
+      </div>
 
       <section className="features">
         <div className="feature">
@@ -284,9 +343,66 @@ const Container = () => {
         </div>
       </div>
 
-      <section className="gallery">Gallery</section>
+      <section className="gallery">
+        <figure className="gallery__item gallery__item--1">
+          <img src={gal1} className="gallery__img1" alt="House" />
+        </figure>
 
-      <footer className="footer">footer</footer>
+        <figure className="gallery__item gallery__item--2">
+          <img src={gal2} className="gallery__img2" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--3">
+          <img src={gal3} className="gallery__img3" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--4">
+          <img src={gal4} className="gallery__img4" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--5">
+          <img src={gal5} className="gallery__img5" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--6">
+          <img src={gal6} className="gallery__img6" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--7">
+          <img src={gal7} className="gallery__img7" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--8">
+          <img src={gal8} className="gallery__img8" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--9">
+          <img src={gal9} className="gallery__img9" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--10">
+          <img src={gal10} className="gallery__img10" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--11">
+          <img src={gal11} className="gallery__img11" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--12">
+          <img src={gal12} className="gallery__img12" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--13">
+          <img src={gal13} className="gallery__img13" alt="House" />
+        </figure>
+        <figure className="gallery__item gallery__item--14">
+          <img src={gal14} className="gallery__img14" alt="House" />
+        </figure>
+      </section>
+
+      <footer className="footer">
+        <nav className="footer__nav">
+          <a href="##">Find your dream home</a>
+          <a href="##">request proposal</a>
+          <a href="##">download home planner</a>
+          <a href="##">contact us</a>
+          <a href="##">submit your property</a>
+          <a href="##">come work with us</a>
+        </nav>
+
+        <p className="footer__copyright">
+          &copy; Copyright 2017 by Jonas Schmedtmann.
+        </p>
+      </footer>
     </div>
   );
 };
